@@ -19,3 +19,21 @@ int main() {
 output:
 100
 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97 
+#include <stdio.h>
+
+int main() {
+   int i,num,count,m;
+   scanf("%d",&m);
+   for(num=1;num<=m;num++){
+       for(i=2,count=0;i*i<=num;i++){
+       if(num%i==0)
+          count++;
+       }
+   if (count==0 && num!=1)
+        printf("%d ",num);
+}
+ return 0;
+}
+output:
+10
+2 3 5 7 
