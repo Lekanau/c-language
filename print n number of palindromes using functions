@@ -1,0 +1,37 @@
+#include<stdio.h>
+int palin(int);
+int palin(int n)
+{
+    int sum,temp,r;
+    sum=0;
+    temp=n;
+    while (n!=0)
+        {
+            r=n%10;
+            sum=sum*10+r;
+            n=n/10;
+
+    }
+    if(temp==sum)
+        return 1;
+    else
+        return 0;
+
+}
+void main()
+{
+    int n,i,count;
+    scanf("%d",&n);
+    for(i=1,count=1;count<=n;i++){
+        if(palin(i)){
+                printf(" %d",i);
+                count++;
+        }
+
+    }
+}
+output:
+10
+12345678911
+Process returned 10 (0xA)   execution time : 2.578 s
+Press any key to continue.
