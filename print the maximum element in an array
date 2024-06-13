@@ -1,0 +1,21 @@
+#include <stdio.h>
+void main()
+{
+    int a[5],max,n,i;
+    max=a[0];
+    scanf("%d",&n);
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    for(i=1;i<n;i++){
+        if(max<a[i]){
+             max=a[i];
+        }
+    }printf("%d",max);
+}
+output:
+5
+10 20 30 40 50
+50
+Process returned 2 (0x2)   execution time : 10.373 s
+Press any key to continue.
